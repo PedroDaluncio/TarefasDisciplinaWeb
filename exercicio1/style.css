@@ -3,16 +3,82 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     min-height: 100%;
+    background-color: #f0f0f0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(86, 28, 140);
 }
 
 header{
-    width: 100vw;
+    width: 100%;
+    max-width: 100%;
     height: 10vh;
     max-height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000000000;
+    box-shadow: 0px 0 10px 0.5px black;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+#sideBar{
+    margin-top: 12vh;
+}
+
+nav{
+    display: flex;
+    gap: 50px;
+}
+
+a{
+    text-decoration: none;
+    transition: 1.5s;
+}
+
+a:hover{
+    color: blue;
+    font-size: 18px;
+}
+
+aside{
+    margin: 10px 0 0 10px;
+    width: 20vw;
+}
+
+#myPhoto{
+    box-shadow: 0px 0 10px 1px black;
+    width: 300px;
+    height: 350px;
+}
+
+dt{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: solid 1px black;
+}
+
+dd{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#myNameAndCollege{
+    margin-top: 15vh;
+    font-size: 35px;
+    font-weight: 700;
 }
