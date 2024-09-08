@@ -8,7 +8,7 @@ body{
     min-height: 100%;
     background-color: #FAFAFA;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #b65bd1;
+    color: #5BA7D1;
 }
 
 header{
@@ -101,12 +101,22 @@ dd{
     border-bottom: solid 2px #4B525D;
 }
 
-#objectives, #Formation, #Pixel, #EnglishClass{
+#objectives, #Formation{
+    width: 30vw;
+    max-width: 30vw;
+    color: #5BA7D1;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 3vh;
+    padding-bottom: 15px;
+    border-bottom: solid 2px #4B525D;
+}
+
+#Pixel, #EnglishClass{
     width: 30vw;
     max-width: 30vw;
     color: #2D5473;
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 23px;
     margin-bottom: 3vh;
     padding-bottom: 15px;
     border-bottom: solid 2px #4B525D;
@@ -144,4 +154,8 @@ address{
 
 #email{
     color: #b65bd1;
+}
+
+.button{
+    padding: 8px 16px;
 }
