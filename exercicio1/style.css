@@ -1,21 +1,23 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     min-height: 100%;
     background-color: #FAFAFA;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #5BA7D1;
 }
 
-header{
+html {
+    min-height: 100%;
+}
+
+header {
     width: 100%;
-    max-width: 100%;
     height: 10vh;
-    max-height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,73 +29,69 @@ header{
     background-color: #e8e8e8;
 }
 
-main{
+main {
     height: 85%;
-    max-height: 85%;
     display: flex;
     flex-direction: row;
-    gap: 10%;
+    margin-bottom: 50px;
+    padding-top: 12vh;
+    gap: 5vh;
 }
 
-nav{
+nav {
     display: flex;
-    gap: 50px;
+    gap: 20px;
 }
 
-a{
+a {
     text-decoration: none;
-    transition: 1.5s;
+    transition: color 0.3s, font-size 0.3s;
 }
 
-a:visited{
+a:visited {
     color: #b65bd1;
 }
 
-a:hover{
+a:hover {
     color: blue;
     font-size: 18px;
 }
 
-aside{
-    margin: 12vh 0 0 0;
+aside {
+    height: fit-content;
+    max-height: fit-content;
     width: 22vw;
-    max-width: 22vw;
-    height: 73%;
-    max-height: 73%;
     background-color: #EFF0F2;
     border-radius: 0 5% 5% 0;
+    padding: 20px;
 }
 
-#myPhoto{
+#myPhoto {
     box-shadow: 0px 0 10px 1px black;
-    width: 300px;
-    height: 350px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     margin-bottom: 20px;
-    margin-left: 10px;
 }
 
-dt{
+dt {
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 15px;
     padding-bottom: 15px;
     border-bottom: solid 1px #4B525D;
-    margin-left: 10px;
 }
 
-dd{
+dd {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 8px;
     color: #2D5473;
-    margin-left: 10px;
 }
 
-#myNameAndCollege{
+#myNameAndCollege {
     width: 65vw;
-    max-width: 65vw;
     color: #2D5473;
-    margin-top: 15vh;
     font-size: 35px;
     font-weight: 700;
     margin-bottom: 7vh;
@@ -101,8 +99,8 @@ dd{
     border-bottom: solid 2px #4B525D;
 }
 
-#objectives, #Formation{
-    width: 30vw;
+#objectives, #Formation {
+    width: 100%;
     max-width: 30vw;
     color: #5BA7D1;
     font-size: 30px;
@@ -112,8 +110,8 @@ dd{
     border-bottom: solid 2px #4B525D;
 }
 
-#Pixel, #EnglishClass{
-    width: 30vw;
+#Pixel, #EnglishClass, #PvOperation {
+    width: 100%;
     max-width: 30vw;
     color: #2D5473;
     font-size: 23px;
@@ -122,8 +120,8 @@ dd{
     border-bottom: solid 2px #4B525D;
 }
 
-#objectivesText, #FormationText, #PixelText, #EnglishClassText{
-    width: 65vw;
+#objectivesText, #FormationText, #PixelText, #EnglishClassText, #PvOperationText {
+    width: 100%;
     max-width: 65vw;
     font-size: 20px;
     font-weight: 500;
@@ -131,31 +129,137 @@ dd{
     color: #2D5473;
 }
 
-#myObjectives, #myFormation{
+#myObjectives, #myFormation {
     margin-bottom: 7vh;
 }
 
-footer{
+footer {
     width: 100%;
-    max-width: 100%;
-    height: 6vh;
-    max-height: 6vh;
+    height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 20px;
     box-shadow: 0px 0 10px 0.5px black;
     background-color: whitesmoke;
 }
 
-address{
+address {
     font-style: normal;
 }
 
-#email{
+#email {
     color: #b65bd1;
 }
 
-.button{
+.button {
     padding: 8px 16px;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    main {
+        flex-direction: column;
+        padding: 10vh 5vw;
+        gap: 5vh;
+    }
+
+    aside {
+        width: 50vw;
+    }
+
+    dt{
+        font-size: 30px;
+    }
+
+    dd, header, footer{
+        font-size: 25px;
+    }
+
+    #myNameAndCollege, #objectives, #Formation, #Pixel, #EnglishClass, #PvOperation {
+        width: 100%;
+        font-size: 35px;
+    }
+
+    #myNameAndCollege, #objectivesText, #FormationText, #PixelText, #EnglishClassText, #PvOperationText {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    #myPhoto {
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 8vh;
+    }
+
+    main {
+        gap: 4vh;
+        padding-top: 10vh;
+    }
+
+    aside {
+        width: 80vw;
+    }
+
+    #myPhoto {
+        width: 200px;
+    }
+
+    #myNameAndCollege {
+        font-size: 25px;
+    }
+
+    #objectives, #Formation, #Pixel, #EnglishClass {
+        font-size: 24px;
+    }
+
+    #objectivesText, #FormationText, #PixelText, #EnglishClassText {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 8vh;
+        width: 100vw;
+    }
+
+    aside {
+        width: 100%;
+        border-radius: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #myPhoto {
+        width: 150px;
+    }
+
+    main{
+        padding: 0;
+        padding-top: 10vh;
+    }
+
+    #myFormation{
+        width: 100vw;
+    }
+
+    #myNameAndCollege, #objectives, #Formation, #Pixel, #EnglishClass {
+        width: 90%;
+        font-size: 22px;
+    }
+
+    #objectivesText, #FormationText, #PixelText, #EnglishClassText {
+        font-size: 18px;
+    }
+    #aboutMe{
+        width: 100vw;
+    }
 }
