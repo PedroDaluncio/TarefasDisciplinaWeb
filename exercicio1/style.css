@@ -6,17 +6,22 @@
 
 body {
     min-height: 100%;
+    width: 98vw;
     background-color: #FAFAFA;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #5BA7D1;
+    overflow-x: hidden;
 }
 
 html {
     min-height: 100%;
+    width: 98vw;
+    overflow-x: hidden;
 }
 
+
 header {
-    width: 100%;
+    width: 98vw;
     height: 10vh;
     display: flex;
     justify-content: center;
@@ -172,7 +177,7 @@ address {
         font-size: 30px;
     }
 
-    dd, header, footer{
+    dd, footer{
         font-size: 25px;
     }
 
@@ -188,6 +193,10 @@ address {
 
     #myPhoto {
         width: 250px;
+    }
+
+    header{
+        font-size: 30px;
     }
 }
 
@@ -248,7 +257,7 @@ address {
     }
 
     #myFormation{
-        width: 100vw;
+        width: 98vw;
     }
 
     #myNameAndCollege, #objectives, #Formation, #Pixel, #EnglishClass {
@@ -260,6 +269,19 @@ address {
         font-size: 18px;
     }
     #aboutMe{
-        width: 100vw;
+        width: 98vw;
+    }
+    a{
+        font-size: 15px ;
+    }
+    footer{
+        gap: 10px;
+        font-size: 10px;
+    }
+    dt{
+        font-size: 22px;
+    }
+    dd{
+        font-size: 18px;
     }
 }
