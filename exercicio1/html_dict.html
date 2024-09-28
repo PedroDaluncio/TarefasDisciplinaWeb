@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicionário de Tags</title>
+    <style>
+        /* Estilos gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+
+        /* Estilizando a lista de dicionário */
+        dl {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 10px 20px;
+        }
+
+        dt {
+            font-weight: bold;
+            color: #333;
+            background-color: #f0f0f0;
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        dd {
+            padding: 8px;
+            background-color: #e9f7e9;
+            border-radius: 4px;
+            margin-left: 0;
+        }
+
+        /* Estilo responsivo */
+        @media (max-width: 768px) {
+            dl {
+                grid-template-columns: 1fr;
+            }
+
+            dt, dd {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dicionário de Tags</h1>
+    </header>
+
+    <main>
+        <section id="tagDictionary">
+            <h2>Tags Utilizadas</h2>
+            <dl>
+                <dt>&lt;!DOCTYPE html&gt;</dt>
+                <dd>Define o tipo de documento, que é HTML5.</dd>
+
+                <dt>&lt;html&gt;</dt>
+                <dd>Elemento raiz de um documento HTML. Contém todos os outros elementos.</dd>
+
+                <dt>&lt;head&gt;</dt>
+                <dd>Contém metadados sobre o documento, como o título e links para folhas de estilo.</dd>
+
+                <dt>&lt;meta&gt;</dt>
+                <dd>Define metadados como o charset e a viewport, essenciais para a responsividade e codificação do documento.</dd>
+
+                <dt>&lt;link&gt;</dt>
+                <dd>Usado para vincular recursos externos, como folhas de estilo e ícones.</dd>
+
+                <dt>&lt;title&gt;</dt>
+                <dd>Define o título da página, que aparece na aba do navegador.</dd>
+
+                <dt>&lt;body&gt;</dt>
+                <dd>Contém o conteúdo visível da página, como textos, imagens, links e outros elementos.</dd>
+
+                <dt>&lt;header&gt;</dt>
+                <dd>Define o cabeçalho da página, normalmente usado para navegação.</dd>
+
+                <dt>&lt;nav&gt;</dt>
+                <dd>Representa uma seção de navegação com links para outras partes do site.</dd>
+
+                <dt>&lt;a&gt;</dt>
+                <dd>Cria um link para outra página ou seção dentro da mesma página.</dd>
+
+                <dt>&lt;div&gt;</dt>
+                <dd>Define uma divisão ou seção genérica em um documento HTML.</dd>
+
+                <dt>&lt;main&gt;</dt>
+                <dd>Indica o conteúdo principal do documento.</dd>
+
+                <dt>&lt;aside&gt;</dt>
+                <dd>Usado para conteúdo relacionado, como uma barra lateral.</dd>
+
+                <dt>&lt;img&gt;</dt>
+                <dd>Exibe uma imagem no documento.</dd>
+
+                <dt>&lt;dl&gt;</dt>
+                <dd>Cria uma lista de termos e suas definições.</dd>
+
+                <dt>&lt;dt&gt;</dt>
+                <dd>Define um termo dentro de uma lista de definições.</dd>
+
+                <dt>&lt;dd&gt;</dt>
+                <dd>Descreve ou define o termo listado no elemento &lt;dt&gt;.</dd>
+
+                <dt>&lt;section&gt;</dt>
+                <dd>Define uma seção de conteúdo temático.</dd>
+
+                <dt>&lt;h1&gt; - &lt;h3&gt;</dt>
+                <dd>Define cabeçalhos, sendo &lt;h1&gt; o mais importante e &lt;h3&gt; de menor importância.</dd>
+
+                <dt>&lt;p&gt;</dt>
+                <dd>Define um parágrafo de texto.</dd>
+
+                <dt>&lt;br&gt;</dt>
+                <dd>Insere uma quebra de linha no texto.</dd>
+
+                <dt>&lt;footer&gt;</dt>
+                <dd>Define o rodapé da página, geralmente com links de contato e redes sociais.</dd>
+
+                <dt>&lt;address&gt;</dt>
+                <dd>Fornece informações de contato.</dd>
+            </dl>
+        </section>
+    </main>
+</body>
+</html>
